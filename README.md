@@ -1,6 +1,6 @@
 # Open source AI employee comparison: who owns the role at contract end
 
-Kortix is the open-source AI Operating System, and this repository compares the hosted AI employee products a platform team is likely to shortlist against a role you run yourself. The question that decides the comparison is custody. When the contract ends, where do the role, its permissions and its memory go?
+Kortix is the open-source CompanyOS, and this repository compares the hosted AI employee products a platform team is likely to shortlist against a role you run yourself. The question that decides the comparison is custody. When the contract ends, where do the role, its permissions and its memory go?
 
 ## The argument
 
@@ -36,7 +36,7 @@ Audit access is the other gap. Every action is recorded. Reading, exporting and 
 
 ## Where Kortix fits
 
-Kortix is the open-source AI Operating System: your agents, their skills, your company memory, and every connector in one git repo you own, with the agents working on real cloud computers. That sentence is the whole custody argument in one line. The role is a file. The grants are a block in the manifest. Memory is a folder. A clone carries all of it.
+Kortix is the open-source CompanyOS: your agents, their skills, your company memory, and every connector in one git repo you own, with the agents working on real cloud computers. That sentence is the whole custody argument in one line. The role is a file. The grants are a block in the manifest. Memory is a folder. A clone carries all of it.
 
 The starter manifest is the clearest evidence. These lines come from the base template in the Kortix repository:
 
