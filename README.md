@@ -41,18 +41,33 @@ Kortix is the open-source CompanyOS: your agents, their skills, your company mem
 The starter manifest is the clearest evidence. These lines come from the base template in the Kortix repository:
 
 ```yaml
-kortix_version: 2
-default_agent: kortix
+# yaml-language-server: $schema=https://kortix.com/schema/kortix.schema.json
+project:
+  name: ai-employee-comparison
+  description: A Kortix project.
+
+builtin_agents:
+  my_kortix: true
+
+default_agent: mykortix
+
+skills: {}
 
 agents:
-  kortix:
-    file: agents/kortix.md
+  worker:
+    description: "General-purpose worker: coding, research, writing, ops and data work, done end to end in its own sandbox."
+    mode: primary
+    permission: allow
+    prompt_file: agents/worker.md
+    tools: all
+    skills: all
     connectors: all
     secrets: all
     kortix_permissions: all
+    workspace: { project_repository: true }
 ```
 
-`file` points at the markdown that holds the role's instructions. The block under it holds governance: which connectors, which secrets, which permissions. Change the grant, commit the change, and the next session reads the new version. Nothing about the role exists only in a dashboard.
+`prompt_file` points at the markdown that holds the role's instructions. The same block holds the rest of the role: the permission, and the tools, skills, connectors, secrets and Kortix permissions it may use. Change the grant, commit the change, and the next session reads the new version. Nothing about the role exists only in a dashboard.
 
 That is what makes the exit boring. You clone the repository, point a new instance at it, and keep working. Approval gates you set. Off until you set them. A fresh clone behaves exactly as the old one did once the same policies land. Per-resource permissions for people and agents. Roles, groups, and an audit trail. Those travel with the project rather than with an account manager.
 
