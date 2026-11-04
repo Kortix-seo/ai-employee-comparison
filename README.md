@@ -89,4 +89,4 @@ The campaign page at [opensourceaiemployee.com](https://opensourceaiemployee.com
 - Teammates.ai, product and trust pages: https://teammates.ai/teammates and https://teammates.ai/trust
 - Kortix connectors and policies: https://kortix.com/docs/connect/connectors
 - Kortix company as code: https://kortix.com/company-as-code
-- Kortix starter manifest: [Kortix on GitHub](https://github.com/kortix-ai/suna/blob/dev/packages/starter/templates/base/kortix.yaml)
+- Kortix starter manifest: [Kortix on GitHub](https://github.com/kortix-ai/CompanyOS/blob/dev/packages/starter/templates/base/kortix.yaml)
